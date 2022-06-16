@@ -46,14 +46,14 @@ button {
 }
 
 .form-container {
-  @include flex-column;
   padding: 1rem 3rem;
   background-color: transparentize($steel-gray, 0.4);
   border-radius: 24px;
   margin: 0 1rem;
+  width: 20%;
   
   &__input {
-    width: 24px;
+    @include flex-column;
     padding: 2rem 0;
     &-box {
       padding: 0.5rem;
@@ -63,6 +63,9 @@ button {
       padding: 0.5rem 2rem;
       margin: 0.5rem 0;
     }
+  }
+  &__top-title {
+    text-align: center
   }
 }
 
