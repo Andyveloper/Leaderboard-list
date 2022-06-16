@@ -1,0 +1,32 @@
+@import './fonts';
+@import './mixins';
+
+body {
+  font-family: $font-family-base;
+}
+
+.title {
+  font-size: 4rem;
+  padding: 2% 5%
+}
+
+.columns {
+  @include flex-row;
+  width: 100%;
+  margin: auto;
+  .form-container {
+    @include flex-column;
+    padding: 2rem 5rem;
+  }
+}
+
+.list-container {
+  @include flex-column;
+  padding: 2rem 5rem;
+  &__top {
+    @include flex-row;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+
