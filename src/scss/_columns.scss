@@ -19,8 +19,18 @@ button {
 }
 
 .title {
-  font-size: 4rem;
-  padding: 2% 5%;
+  font-size: 10rem;
+  font-family: $font-title;
+  letter-spacing: 12px;
+  padding: 1% 5% 0 5%;
+  color: white;
+  text-align: center;
+  text-shadow: 5px 5px 5px transparentize(black, 0.5);
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  padding: 0 5%;
   color: white;
   text-align: center;
   text-shadow: 5px 5px 5px transparentize(black, 0.5);
