@@ -13,6 +13,7 @@ button {
   border-radius: 0.8rem;
   border: none;
   transition: all 0.2s ease-in-out;
+
   &:hover {
     background-color: darken($steel-gray, 5%);
   }
@@ -25,7 +26,7 @@ button {
   padding: 1% 5% 0 5%;
   color: white;
   text-align: center;
-  text-shadow: 5px 5px 5px transparentize(black, 0.5);
+  text-shadow: $text-shadow;
 }
 
 .subtitle {
@@ -33,11 +34,12 @@ button {
   padding: 0 5%;
   color: white;
   text-align: center;
-  text-shadow: 5px 5px 5px transparentize(black, 0.5);
+  text-shadow: $text-shadow;
 }
 
 .columns {
   @include flex-row;
+
   justify-content: space-evenly;
   align-items: flex-start;
   width: 100%;
@@ -51,39 +53,45 @@ button {
   border-radius: 24px;
   margin: 0 1rem;
   width: 20%;
-  
+
   &__input {
     @include flex-column;
+
     padding: 2rem 0;
+
     &-box {
       padding: 0.5rem;
       margin: 0.5rem 0;
     }
+
     &-button {
       padding: 0.5rem 2rem;
       margin: 0.5rem 0;
     }
   }
+
   &__top-title {
-    text-align: center
+    text-align: center;
   }
 }
 
 .list-container {
   @include flex-column;
+
   padding: 1rem 5rem;
   background-color: transparentize($steel-gray, 0.4);
   border-radius: 24px;
   margin: 0 1rem;
   width: 50%;
+
   &__top {
     @include flex-row;
+
     justify-content: flex-start;
+
     &-button {
-      padding: 0.5rem;
       margin-left: 2rem;
       padding: 0.5rem 2rem;
     }
   }
 }
-
