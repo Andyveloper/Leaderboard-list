@@ -11,8 +11,14 @@
   justify-content: center;
 }
 
-@mixin score-element {
+@mixin score-element-static {
   border-top: 1px solid darken($steel-gray, 5%);
+  border-bottom: 1px solid darken($steel-gray, 5%);
+  width: 100%;
+  padding: 0.5rem;
+}
+
+@mixin score-element {
   border-bottom: 1px solid darken($steel-gray, 5%);
   width: 100%;
   padding: 0.5rem;
