@@ -1,0 +1,50 @@
+.list-container__list-ranking {
+  &-element {
+    @include flex-row;
+
+    justify-content: space-around;
+
+    &:hover {
+      background-color: darken(transparentize($steel-gray, 0.4), 25%);
+    }
+
+    &--static {
+      @include flex-row;
+
+      justify-content: space-around;
+      margin-top: 1rem;
+      font-weight: 700;
+
+      &:hover {
+        background-color: darken(transparentize($steel-gray, 0.4), 25%);
+      }
+    }
+
+    &-name {
+      @include score-element;
+
+      padding: 0.5rem;
+      border-right: 0;
+    }
+
+    &-score {
+      @include score-element;
+
+      border-right: 0;
+    }
+
+    &-league {
+      @include score-element;
+
+      width: 40%;
+    }
+  }
+}
+
+.league-icon {
+  width: 1rem;
+}
+
+.league-icon-span {
+  float: right;
+}

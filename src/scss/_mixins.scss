@@ -1,0 +1,27 @@
+@mixin flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@mixin score-element-static {
+  border-top: 1px solid darken($steel-gray, 5%);
+  border-bottom: 1px solid darken($steel-gray, 5%);
+  width: 100%;
+  padding: 0.5rem;
+}
+
+@mixin score-element {
+  border-bottom: 1px solid darken($steel-gray, 5%);
+  width: 100%;
+  padding: 0.5rem;
+}
+
+$text-shadow: 5px 5px 5px transparentize(black, 0.5);
