@@ -14,12 +14,13 @@ const createListElement = (name, score, league) => {
 };
 
 const leagueTrack = (score) => {
-  for (let i = 0; i < leagues.length; i++) {
+  for (let i = 0; i < leagues.length; i += 1) {
     if (score < leagues[i].maxScore) {
-      return leagues[i].name + ' ' + `<span class="league-icon-span"><img class="league-icon" src="${leagues[i].icon}"><span>`;
+      return `${leagues[i].name}<span class="league-icon-span"><img class="league-icon" src="${leagues[i].icon}"><span>`;
     }
   }
-}
+  return false;
+};
 
 const submitButton = document.getElementById('submit-score');
 
