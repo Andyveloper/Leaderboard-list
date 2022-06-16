@@ -7,23 +7,49 @@
     <title>Document</title>
   <script defer src="main.js"></script></head>
   <body>
-    <h1 class="title">Leaderboard</h1>
+    <h1 class="title">SC2 1V1 Ladder Ranking</h1>
     <main class="columns">
       <div class="list-container">
         <div class="list-container__top">
           <h2 class="list-container__top-title">Recent Scores</h2>
-          <button type="submit" class="list-container__top-title">
-            <a href="#">Refresh</a>
+          <button type="submit" class="list-container__top-button">
+            Refresh
           </button>
-          <div class="list-container__list"></div>
+        </div>
+        <div id="ranking" class="list-container__list">
+          <ul class="list-container__list-ranking">
+            <li class="list-container__list-ranking-element">
+              <span class="list-container__list-ranking-element-name"
+                >Name</span
+              >
+              <span class="list-container__list-ranking-element-score"
+                >Score</span
+              >
+              <span class="list-container__list-ranking-element-league"
+                >League</span
+              >
+            </li>
+          </ul>
         </div>
       </div>
       <div class="form-container">
-        <h2 class="form-container__top-title">Add Score</h2>
+        <h2 class="form-container__top-title">Add Your Score</h2>
         <form action="" class="form-container__input">
-          <input type="text" name="name" placeholder="Name" />
-          <input type="text" name="score" placeholder="Score" />
-          <button type="submit">Submit</button>
+          <input
+            class="form-container__input-box"
+            type="text"
+            name="name"
+            placeholder="Name"
+          />
+          <input
+            class="form-container__input-box"
+            type="text"
+            name="score"
+            placeholder="Score"
+          />
+          <button class="form-container__input-button" type="submit">
+            Submit
+          </button>
         </form>
       </div>
     </main>

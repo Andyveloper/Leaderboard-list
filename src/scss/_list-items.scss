@@ -1,0 +1,23 @@
+.list-container__list-ranking {
+  &-element {
+    @include flex-row;
+    justify-content: space-around;
+    margin-top: 1rem;
+    &:hover {
+      background-color: darken(transparentize($steel-gray, 0.4), 25%);
+    }
+    &-name {
+      @include score-element;
+      padding: 0.5rem;
+      border-right: 0
+    }
+    &-score {
+      @include score-element;
+      border-right: 0
+    }
+    &-league {
+      @include score-element;
+      width: 30%;
+    }
+  }
+}
