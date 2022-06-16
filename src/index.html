@@ -19,7 +19,7 @@
         </div>
         <div class="list-container__list">
           <ul id="ranking" class="list-container__list-ranking">
-            <li class="list-container__list-ranking-element">
+            <li class="list-container__list-ranking-element--static">
               <span class="list-container__list-ranking-element-name"
                 >Name</span
               >
@@ -37,18 +37,24 @@
         <h2 class="form-container__top-title">Add Your Score</h2>
         <form action="" class="form-container__input">
           <input
+            id="name"
             class="form-container__input-box"
             type="text"
             name="name"
             placeholder="Name"
           />
           <input
+            id="score"
             class="form-container__input-box"
             type="text"
             name="score"
             placeholder="Score"
           />
-          <button class="form-container__input-button" type="submit">
+          <button
+            id="submit-score"
+            class="form-container__input-button"
+            type="submit"
+          >
             Submit
           </button>
         </form>
