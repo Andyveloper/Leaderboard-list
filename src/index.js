@@ -2,10 +2,11 @@ import './main.scss';
 
 import scoreSubmission from './modules/createListElement.js';
 
-import populate from './modules/leaderboardAPI.js';
-import { getScores } from './modules/leaderboardAPI.js';
+import createGame from './modules/leaderboardAPI.js';
+import refreshPage from './modules/refreshButton.js';
+
 scoreSubmission();
 
-populate();
+createGame();
 
-getScores();
+refreshPage();
