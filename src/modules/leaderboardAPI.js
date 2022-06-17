@@ -1,6 +1,5 @@
-
 async function createGame() {
-  const requestURL = "https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/";
+  const requestURL = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/';
 
   const response = await fetch(requestURL, {
     method: 'POST',
@@ -17,9 +16,8 @@ async function createGame() {
 
 export default createGame;
 
-
 export async function getScores() {
-  const requestURL = "https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/Q1nwStE9fd5v5Jo7eSCd/scores/";
+  const requestURL = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/Q1nwStE9fd5v5Jo7eSCd/scores/';
 
   const response = await fetch(requestURL, {
     method: 'GET',
@@ -29,7 +27,7 @@ export async function getScores() {
 }
 
 export async function addScore(user, score) {
-  const requestURL = "https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/Q1nwStE9fd5v5Jo7eSCd/scores/";
+  const requestURL = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/Q1nwStE9fd5v5Jo7eSCd/scores/';
 
   const response = await fetch(requestURL, {
     method: 'POST',
